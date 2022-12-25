@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header 
+{
+    background-color: rgba(190, 71, 91, 0.493); 
+    height: 60px;
+    color: rgb(161, 77, 77);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img 
+{
+    visibility: hidden;
+}
+
+header:hover img 
+{
+    visibility: visible;
+    transition: 0.6s;
+    transform: translateX(16vw);
+}
+
+header h1 
+{
+    font-size: 25px;
+    font-weight: 200;
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.17);
+}
+
+header button 
+{
+    padding: 9px 25px;
+    font-size: 16px;
+    background-color: rgb(184, 37, 111);
+    color: rgb(245, 234, 234);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header button:hover 
+{
+    color: rgb(8, 85, 83);
+    background-color: black;
+}
+
+.cards 
+{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card 
+{
+    padding: 10px;
+    margin: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 100, 125);
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 25px gray;
+    transition: 0.1s ease-out;
+}
+
+.card:hover 
+{
+    background-color: rgb(44, 96, 96);
+    color: pink;
+    transform: scale(1.1);
+}
+
+.card .profile-image img 
+{
+    border-radius: 45%;
+}
+
+.card .card-content 
+{
+    text-align: center;
+}
+
+.card .card-content h3 
+{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card .card-content h2 
+{
+    font-size: 20px;
+    font-weight: 100;
+}
